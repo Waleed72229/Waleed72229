@@ -3,89 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعك</title>
+    <title>الابيض لتأجير مستلزمات الحفلات والمناسبات</title>
     <style>
-        /* تنسيق الأزرار الدائرية */
-        .button {
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            color: white;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            margin: 10px;
-        }
-
-        /* أيقونة واتساب */
-        .whatsapp-button {
-            background-color: #25D366;  /* لون واتساب */
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        /* أيقونة الاتصال */
-        .call-button {
-            background-color: #4CAF50;  /* لون الاتصال */
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Phone_icon_%28material%29.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        
-        /* تنسيق النصوص داخل الصفحة */
+        /* خلفية شفافة */
         body {
+            background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة بنسبة 50% */
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.6); /* خلفية شفافة للنصوص */
+            padding: 20px;
+            text-align: center;
         }
 
         section {
+            background-color: rgba(255, 255, 255, 0.3); /* شفافية أخرى للصور */
             padding: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .contact-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .service-item {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-
-    <!-- قسم النصوص العنوان والتوضيح -->
-    <section>
+    <!-- Header section with background -->
+    <header>
         <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات والمؤتمرات والضيافة</h1>
-        <p>مرحبا بك 👋 هنا تجد كل ما تحتاجة لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم.</p>
-    </section>
+        <p>مرحبا بك 👋 هنا تجد كل ما تحتاجه لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم.</p>
+    </header>
 
-    <!-- قسم خدماتنا -->
+    <!-- Services section -->
     <section>
         <h2>خدماتنا</h2>
-        <ul>
-            <li>تأجير جميع مستلزمات الحفلات والمناسبات</li>
-            <li>تأجير كنب</li>
-            <li>تأجير طاولات طعام</li>
-            <li>تأجير جلسات شعبية مرتفعة وأرضية</li>
-            <li>تأجير سماعات</li>
-            <li>تأجير مكيفات</li>
-            <li>تأجير كراسي</li>
-            <li>تأجير سجاد ملكي</li>
-            <li>تأجير طاولات بوفية</li>
-            <li>تأجير طاولات قزاز</li>
-            <li>تأجير كراسي شفافة</li>
-            <li>ضيافة - لدينا قهوجيين وصبابين</li>
-            <li>توصيل لجميع مدن الشرقية</li>
-        </ul>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>تأجير كنب</h3>
+                <img src="https://example.com/sofa-image.jpg" alt="تأجير كنب">
+            </div>
+            <div class="service-item">
+                <h3>تأجير طاولات طعام</h3>
+                <img src="https://example.com/table-image.jpg" alt="تأجير طاولات طعام">
+            </div>
+            <div class="service-item">
+                <h3>تأجير جلسات شعبية مرتفعة وأرضية</h3>
+                <img src="https://example.com/sitting-image.jpg" alt="تأجير جلسات شعبية">
+            </div>
+        </div>
     </section>
 
-    <!-- قسم الأزرار: واتساب واتصال -->
-    <section>
-        <!-- زر واتساب -->
-        <a href="https://wa.me/966559534118" class="button whatsapp-button" target="_blank"></a>
+    <!-- Contact Icons -->
+    <div class="contact-icons">
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/966559534118" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
 
-        <!-- زر اتصال -->
-        <a href="tel:+966559534118" class="button call-button" target="_blank"></a>
-    </section>
+        <!-- Phone Icon -->
+        <a href="tel:+966559534118" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Phone_icon_%28Font_Awesome%29.svg" alt="Call">
+        </a>
+    </div>
 
 </body>
 </html>
- 
