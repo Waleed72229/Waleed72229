@@ -3,140 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الابيض لتأجير مستلزمات الحفلات والمناسبات</title>
+    <title>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.postimg.cc/3RBRFkh1/1446-10-17-05-12-56-c0e3dfba.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: #fff;
+            color: white;
         }
-
         header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
             text-align: center;
-            border-radius: 8px;
+            padding: 20px;
         }
-
-        h1 {
+        header h1 {
             font-size: 36px;
+            margin-bottom: 10px;
         }
-
-        .services, .contact {
+        header p {
+            font-size: 20px;
+        }
+        .contact-buttons {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin-top: 20px;
         }
-
-        .service, .contact-item {
-            text-align: center;
-            margin: 10px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 8px;
-            width: 250px;
-        }
-
-        .service img, .contact-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .contact-item {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .contact-item a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            padding: 15px;
-            background-color: #25d366;
+        .contact-buttons a {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
             border-radius: 50%;
-            text-align: center;
-            width: 50px;
-            height: 50px;
+            font-size: 24px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
-        .contact-item a.phone {
+        .contact-buttons a.phone {
             background-color: #34b7f1;
         }
-
-        footer {
+        .services, .works {
+            margin: 50px auto;
+            padding: 20px;
             text-align: center;
+            max-width: 1200px;
+        }
+        .services h2, .works h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .services ul, .works img {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .services ul li, .works img {
+            width: 30%;
+            margin: 10px;
+        }
+        .services ul li {
+            list-style-type: none;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
             margin-top: 20px;
-        }
-
-        .footer-text {
-            font-size: 18px;
-            color: #fff;
-        }
-
-        /* Add responsive design for smaller screens */
-        @media (max-width: 768px) {
-            .services, .contact {
-                flex-direction: column;
-            }
-
-            .service, .contact-item {
-                width: 80%;
-                margin: 10px auto;
-            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات والمؤتمرات والضيافة</h1>
-    <p>مرحبا بك 👋 هنا تجد كل ما تحتاجه لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم</p>
+    <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</h1>
+    <p>مرحبا بك 👋 هنا تجد كل ما تحتاجة لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم</p>
+
+    <div class="contact-buttons">
+        <a href="https://wa.me/yourwhatsapplink" target="_blank">واتساب</a>
+        <a href="tel:+123456789" class="phone">اتصال</a>
+    </div>
 </header>
 
-<section class="services">
-    <div class="service">
-        <h3>تأجير كنب</h3>
-        <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="تأجير كنب">
-    </div>
-    <div class="service">
-        <h3>تأجير طاولات طعام</h3>
-        <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="تأجير طاولات طعام">
-    </div>
-    <div class="service">
-        <h3>تأجير جلسات شعبية</h3>
-        <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="تأجير جلسات شعبية">
-    </div>
-    <div class="service">
-        <h3>تأجير سماعات</h3>
-        <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="تأجير سماعات">
-    </div>
-    <div class="service">
-        <h3>تأجير مكيفات</h3>
-        <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="تأجير مكيفات">
-    </div>
-    <div class="service">
-        <h3>تأجير كراسي</h3>
-        <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="تأجير كراسي">
-    </div>
-</section>
+<div class="services">
+    <h2>خدماتنا</h2>
+    <ul>
+        <li>تأجير مستلزمات الحفلات</li>
+        <li>تنظيم المناسبات</li>
+        <li>خدمات المؤتمرات</li>
+    </ul>
+</div>
 
-<section class="contact">
-    <div class="contact-item">
-        <a href="https://wa.me/966559534118" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/WhatsApp_logo_2022.svg" alt="واتساب">
-        </a>
-    </div>
-    <div class="contact-item">
-        <a href="tel:+966559534118" class="phone">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Phone_icon.svg" alt="اتصال">
-        </a>
-    </div>
-</section>
+<div class="works">
+    <h2>أعمالنا</h2>
+    <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="Work 1">
+    <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="Work 2">
+    <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="Work 3">
+    <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="Work 4">
+    <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="Work 5">
+</div>
 
 <footer>
-    <p class="footer-text">توصيل لجميع مدن الشرقية</p>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
 </footer>
 
 </body>
