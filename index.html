@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://i.postimg.cc/3RBRFkh1/1446-10-17-05-12-56-c0e3dfba.jpg') no-repeat center center fixed;
+            background-color: rgba(255, 255, 255, 0.7); /* خلفية شفافة */
+            background-image: url('https://i.postimg.cc/B6sbFxrt/1446-10-17-05-12-55-27f87b4d.jpg'); /* يمكنك تغيير الخلفية */
             background-size: cover;
             color: white;
         }
         header {
             text-align: center;
-            padding: 20px;
+            padding: 50px;
         }
         header h1 {
             font-size: 36px;
@@ -23,6 +24,8 @@
         }
         header p {
             font-size: 20px;
+            max-width: 800px;
+            margin: auto;
         }
         .contact-buttons {
             display: flex;
@@ -30,49 +33,51 @@
             margin-top: 20px;
         }
         .contact-buttons a {
-            background-color: #25D366;
+            background-color: #34b7f1;
             color: white;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 20px;
+            margin: 10px;
             border-radius: 50%;
             font-size: 24px;
             text-decoration: none;
+            width: 70px;
+            height: 70px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .contact-buttons a.phone {
-            background-color: #34b7f1;
+            background-color: #25D366;
         }
         .services, .works {
             margin: 50px auto;
-            padding: 20px;
+            padding: 40px;
             text-align: center;
             max-width: 1200px;
         }
         .services h2, .works h2 {
             font-size: 30px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
-        .services ul, .works img {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .services ul li, .works img {
-            width: 30%;
-            margin: 10px;
+        .services ul {
+            list-style-type: none;
+            padding: 0;
         }
         .services ul li {
-            list-style-type: none;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .works img {
+            width: 32%;
+            margin: 10px;
+            border-radius: 8px;
         }
         footer {
             background-color: #222;
             color: white;
             text-align: center;
             padding: 10px;
-            margin-top: 20px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -80,11 +85,15 @@
 
 <header>
     <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</h1>
-    <p>مرحبا بك 👋 هنا تجد كل ما تحتاجة لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم</p>
+    <p>نحن نقدم أفضل الخدمات لتأجير مستلزمات الحفلات والمناسبات بأسعار مناسبة وجودة عالية. لا تتردد في الاتصال بنا!</p>
 
     <div class="contact-buttons">
-        <a href="https://wa.me/yourwhatsapplink" target="_blank">واتساب</a>
-        <a href="tel:+123456789" class="phone">اتصال</a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+        </a>
+        <a href="tel:+123456789" class="phone">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Phone_icon.svg" alt="Call" style="width: 40px; height: 40px;">
+        </a>
     </div>
 </header>
 
@@ -99,11 +108,13 @@
 
 <div class="works">
     <h2>أعمالنا</h2>
-    <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="Work 1">
-    <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="Work 2">
-    <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="Work 3">
-    <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="Work 4">
-    <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="Work 5">
+    <div>
+        <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="Work 1">
+        <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="Work 2">
+        <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="Work 3">
+        <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="Work 4">
+        <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="Work 5">
+    </div>
 </div>
 
 <footer>
