@@ -1,3 +1,48 @@
+<style>
+    /* خلفية العنوان والنصوص التوضيحية */
+    section {
+        background-image: url('رابط_الصورة_التي_تريدها');  /* ضع رابط الصورة التي تريدها هنا */
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.7; 
+        padding: 20px;
+    }
+
+    /* خلفية شفافة لخدماتنا */
+    .services {
+        background-color: rgba(255, 255, 255, 0.7);  /* خلفية شفافة بيضاء */
+        padding: 20px;
+    }
+
+    /* الأزرار الدائرية */
+    .button {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .whatsapp-button {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .call-button {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Phone_icon_%28material%29.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
 body {
   font-family: 'Tahoma', sans-serif;
   margin: 0;
