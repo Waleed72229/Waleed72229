@@ -1,147 +1,91 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الابيض لتأجير</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      direction: rtl;
-      text-align: center;
-      background-color: #f8f8f8;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعك</title>
+    <style>
+        /* تنسيق الأزرار الدائرية */
+        .button {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin: 10px;
+        }
 
-    header {
-      background-color: #222;
-      color: white;
-      padding: 40px 20px 20px;
-    }
+        /* أيقونة واتساب */
+        .whatsapp-button {
+            background-color: #25D366;  /* لون واتساب */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-    h1 {
-      margin: 0;
-      font-size: 26px;
-    }
+        /* أيقونة الاتصال */
+        .call-button {
+            background-color: #4CAF50;  /* لون الاتصال */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Phone_icon_%28material%29.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        /* تنسيق النصوص داخل الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    p {
-      font-size: 18px;
-      margin: 15px 0;
-    }
-
-    .contact-buttons {
-      margin: 20px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .contact-buttons a {
-      text-decoration: none;
-      color: white;
-      padding: 15px 20px;
-      border-radius: 50%;
-      display: inline-block;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .call-btn {
-      background-color: #28a745;
-    }
-
-    .whatsapp-btn {
-      background-color: #25d366;
-    }
-
-    section {
-      padding: 40px 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .gallery div {
-      width: 30%;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    @media(max-width: 768px) {
-      .gallery div {
-        width: 80%;
-      }
-    }
-  </style>
+        section {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات والمؤتمرات والضيافة</h1>
-    <p>مرحبا بك 👋 هنا تجد كل ما تحتاجة لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم</p>
-    
-    <div class="contact-buttons">
-   <a href="https://wa.me/966559534118" class="button whatsapp-button" target="_blank"></a>
-<a href="tel:+966559534118" class="button call-button" target="_blank"></a>
-  </header>
+    <!-- قسم النصوص العنوان والتوضيح -->
+    <section>
+        <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات والمؤتمرات والضيافة</h1>
+        <p>مرحبا بك 👋 هنا تجد كل ما تحتاجة لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم.</p>
+    </section>
 
-  <section id="services">
-    <h2>خدماتنا</h2>
-    <ul>
-      <li>تأجير كنب</li>
-      <li>تأجير طاولات طعام</li>
-      <li>تأجير جلسات شعبية مرتفعه وأرضية</li>
-      <li>تأجير سماعات</li>
-      <li>تأجير مكيفات</li>
-      <li>تأجير كراسي</li>
-      <li>تأجير سجاد ملكي</li>
-      <li>تأجير طاولات بوفية</li>
-      <li>تأجير طاولات قزاز</li>
-      <li>تأجير كراسي شفافة</li>
-      <li>ضيافة</li>
-      <li>لدينا قهوجيين وصبابين</li>
-      <li>توصيل جميع مدن الشرقية</li>
-    </ul>
+    <!-- قسم خدماتنا -->
+    <section>
+        <h2>خدماتنا</h2>
+        <ul>
+            <li>تأجير جميع مستلزمات الحفلات والمناسبات</li>
+            <li>تأجير كنب</li>
+            <li>تأجير طاولات طعام</li>
+            <li>تأجير جلسات شعبية مرتفعة وأرضية</li>
+            <li>تأجير سماعات</li>
+            <li>تأجير مكيفات</li>
+            <li>تأجير كراسي</li>
+            <li>تأجير سجاد ملكي</li>
+            <li>تأجير طاولات بوفية</li>
+            <li>تأجير طاولات قزاز</li>
+            <li>تأجير كراسي شفافة</li>
+            <li>ضيافة - لدينا قهوجيين وصبابين</li>
+            <li>توصيل لجميع مدن الشرقية</li>
+        </ul>
+    </section>
 
-    <div>
-      <h2 style="margin-top: 50px;">صور من أعمالنا</h2>
-      <div class="gallery">
-      <div class="service-images">
-    <img src="https://i.postimg.cc/dtShfZyS/1446-10-17-05-13-00-43e444d6.jpg" alt="خدمة 1">
-    <img src="https://i.postimg.cc/YCGvB2N2/1446-10-17-05-12-57-bf9f83e9.jpg" alt="خدمة 2">
-    <img src="https://i.postimg.cc/k5WDDjhk/1446-10-17-05-12-51-ef18847b.jpg" alt="خدمة 3">
-    <img src="https://i.postimg.cc/B6sbFxrt/1446-10-17-05-12-55-27f87b4d.jpg" alt="خدمة 4">
-    <img src="https://i.postimg.cc/BbnvYJQ0/1446-10-17-05-12-56-33c19ef2.jpg" alt="خدمة 5">
-    <img src="https://i.postimg.cc/3RBRFkh1/1446-10-17-05-12-56-c0e3dfba.jpg" alt="خدمة 6">
-    <img src="https://i.postimg.cc/GtX4dHSt/1446-10-17-05-13-00-ac39ac91.jpg" alt="خدمة 7">
-    <img src="https://i.postimg.cc/9Mt4gxdG/1446-10-17-05-13-00-16a06efe.jpg" alt="خدمة 8">
-    <img src="https://i.postimg.cc/hvDXk9sN/1446-10-17-05-13-01-f7ce92ed.jpg" alt="خدمة 9">
-    <img src="https://i.postimg.cc/ht67XQ47/1446-10-17-05-13-01-4251b4ef.jpg" alt="خدمة 10">
-    <img src="https://i.postimg.cc/FKSk3F1C/1446-10-17-05-13-02-fc0ea9db.jpg" alt="خدمة 11">
-    <img src="https://i.postimg.cc/CLM8XV6d/1446-10-17-05-13-02-5fac814b.jpg" alt="خدمة 12">
-    <img src="https://i.postimg.cc/bwstY9Ph/1446-10-17-05-16-40-40ea514b.jpg" alt="خدمة 13">
-    <img src="https://i.postimg.cc/8PyvVnq4/1446-10-17-05-16-40-b6f049d6.jpg" alt="خدمة 14">
-      </div>
-    </div>
-  </section>
+    <!-- قسم الأزرار: واتساب واتصال -->
+    <section>
+        <!-- زر واتساب -->
+        <a href="https://wa.me/966559534118" class="button whatsapp-button" target="_blank"></a>
+
+        <!-- زر اتصال -->
+        <a href="tel:+966559534118" class="button call-button" target="_blank"></a>
+    </section>
 
 </body>
 </html>
+ 
