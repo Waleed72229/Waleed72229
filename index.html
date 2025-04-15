@@ -5,93 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الابيض لتأجير مستلزمات الحفلات والمناسبات</title>
     <style>
-        /* خلفية شفافة */
         body {
-            background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة بنسبة 50% */
             font-family: Arial, sans-serif;
+            background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
         }
 
         header {
-            background-color: rgba(255, 255, 255, 0.6); /* خلفية شفافة للنصوص */
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             text-align: center;
+            border-radius: 8px;
         }
 
-        section {
-            background-color: rgba(255, 255, 255, 0.3); /* شفافية أخرى للصور */
-            padding: 20px;
+        h1 {
+            font-size: 36px;
+        }
+
+        .services, .contact {
+            display: flex;
+            justify-content: space-around;
             margin-top: 20px;
         }
 
-        .contact-icons img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        .service, .contact-item {
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            width: 250px;
+        }
+
+        .service img, .contact-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .contact-item {
+            display: inline-block;
             margin: 10px;
         }
 
-        .contact-icons {
+        .contact-item a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 15px;
+            background-color: #25d366;
+            border-radius: 50%;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact-item a.phone {
+            background-color: #34b7f1;
+        }
+
+        footer {
             text-align: center;
             margin-top: 20px;
         }
 
-        .service-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .footer-text {
+            font-size: 18px;
+            color: #fff;
         }
 
-        .service-item {
-            width: 30%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+        /* Add responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .services, .contact {
+                flex-direction: column;
+            }
 
-        .service-item img {
-            width: 100%;
-            height: auto;
+            .service, .contact-item {
+                width: 80%;
+                margin: 10px auto;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header section with background -->
-    <header>
-        <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات والمؤتمرات والضيافة</h1>
-        <p>مرحبا بك 👋 هنا تجد كل ما تحتاجه لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم.</p>
-    </header>
 
-    <!-- Services section -->
-    <section>
-        <h2>خدماتنا</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>تأجير كنب</h3>
-                <img src="https://example.com/sofa-image.jpg" alt="تأجير كنب">
-            </div>
-            <div class="service-item">
-                <h3>تأجير طاولات طعام</h3>
-                <img src="https://example.com/table-image.jpg" alt="تأجير طاولات طعام">
-            </div>
-            <div class="service-item">
-                <h3>تأجير جلسات شعبية مرتفعة وأرضية</h3>
-                <img src="https://example.com/sitting-image.jpg" alt="تأجير جلسات شعبية">
-            </div>
-        </div>
-    </section>
+<header>
+    <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات والمؤتمرات والضيافة</h1>
+    <p>مرحبا بك 👋 هنا تجد كل ما تحتاجه لحفلتك ومناسبتك بسعر مميز وخدمة رائعة يُسعدنا خدمتكم</p>
+</header>
 
-    <!-- Contact Icons -->
-    <div class="contact-icons">
-        <!-- WhatsApp Icon -->
+<section class="services">
+    <div class="service">
+        <h3>تأجير كنب</h3>
+        <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="تأجير كنب">
+    </div>
+    <div class="service">
+        <h3>تأجير طاولات طعام</h3>
+        <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="تأجير طاولات طعام">
+    </div>
+    <div class="service">
+        <h3>تأجير جلسات شعبية</h3>
+        <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="تأجير جلسات شعبية">
+    </div>
+    <div class="service">
+        <h3>تأجير سماعات</h3>
+        <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="تأجير سماعات">
+    </div>
+    <div class="service">
+        <h3>تأجير مكيفات</h3>
+        <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="تأجير مكيفات">
+    </div>
+    <div class="service">
+        <h3>تأجير كراسي</h3>
+        <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="تأجير كراسي">
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact-item">
         <a href="https://wa.me/966559534118" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        </a>
-
-        <!-- Phone Icon -->
-        <a href="tel:+966559534118" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Phone_icon_%28Font_Awesome%29.svg" alt="Call">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/WhatsApp_logo_2022.svg" alt="واتساب">
         </a>
     </div>
+    <div class="contact-item">
+        <a href="tel:+966559534118" class="phone">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Phone_icon.svg" alt="اتصال">
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p class="footer-text">توصيل لجميع مدن الشرقية</p>
+</footer>
 
 </body>
 </html>
