@@ -3,123 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>الابيض لتأجير مستلزمات الحفلات</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: rgba(255, 255, 255, 0.7); /* خلفية شفافة */
-            background-image: url('https://i.postimg.cc/B6sbFxrt/1446-10-17-05-12-55-27f87b4d.jpg'); /* يمكنك تغيير الخلفية */
+            background: url('https://source.unsplash.com/1600x900/?nature,sea') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
+
         header {
             text-align: center;
             padding: 50px;
+            background: rgba(0, 0, 0, 0.6);
         }
+
         header h1 {
             font-size: 36px;
-            margin-bottom: 10px;
         }
-        header p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: auto;
+
+        section {
+            padding: 30px 20px;
         }
-        .contact-buttons {
+
+        .services {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            margin-top: 20px;
         }
-        .contact-buttons a {
-            background-color: #34b7f1;
-            color: white;
+
+        .service {
+            flex: 1 1 200px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
             padding: 20px;
-            margin: 10px;
-            border-radius: 50%;
-            font-size: 24px;
-            text-decoration: none;
-            width: 70px;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact-buttons a.phone {
-            background-color: #25D366;
-        }
-        .services, .works {
-            margin: 50px auto;
-            padding: 40px;
             text-align: center;
-            max-width: 1200px;
         }
-        .services h2, .works h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
+
+        .contact-buttons {
+            text-align: center;
+            margin: 30px 0;
         }
-        .services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .services ul li {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .works img {
-            width: 32%;
+
+        .contact-buttons a {
+            text-decoration: none;
             margin: 10px;
-            border-radius: 8px;
+            padding: 15px 20px;
+            border-radius: 50%;
+            color: white;
+            background-color: #25d366; /* WhatsApp color */
+            font-size: 20px;
         }
+
+        .contact-buttons a.phone {
+            background-color: #4CAF50; /* Call button color */
+        }
+
         footer {
-            background-color: #222;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
             text-align: center;
-            padding: 10px;
-            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</h1>
+        <p>نحن نقدم لك أفضل المستلزمات لجعل مناسبتك أكثر تميزًا.</p>
+    </header>
 
-<header>
-    <h1>الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</h1>
-    <p>نحن نقدم أفضل الخدمات لتأجير مستلزمات الحفلات والمناسبات بأسعار مناسبة وجودة عالية. لا تتردد في الاتصال بنا!</p>
+    <section>
+        <h2>خدماتنا</h2>
+        <div class="services">
+            <div class="service">
+                <h3>تأجير كنب</h3>
+                <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="تأجير كنب">
+            </div>
+            <div class="service">
+                <h3>تأجير طاولات وكراسي</h3>
+                <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="تأجير طاولات وكراسي">
+            </div>
+            <div class="service">
+                <h3>تأجير خيام</h3>
+                <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="تأجير خيام">
+            </div>
+            <div class="service">
+                <h3>تأجير طاولات طعام</h3>
+                <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="تأجير طاولات طعام">
+            </div>
+            <div class="service">
+                <h3>تأجير طاولات قزاز</h3>
+                <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="تأجير طاولات قزاز">
+            </div>
+            <div class="service">
+                <h3>تأجير سجاد</h3>
+                <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="تأجير سجاد">
+            </div>
+            <div class="service">
+                <h3>تأجير مكيفات</h3>
+                <img src="https://i.postimg.cc/YS2151HG/1446-10-17-05-16-40-40ea514b.jpg" alt="تأجير مكيفات">
+            </div>
+            <div class="service">
+                <h3>تأجير سماعات</h3>
+                <img src="https://i.postimg.cc/d0cPsV1K/1446-10-17-05-16-40-b6f049d6.jpg" alt="تأجير سماعات">
+            </div>
+            <div class="service">
+                <h3>تأجير جلسات شعبية</h3>
+                <img src="https://i.postimg.cc/pdZ7PX8y/1446-10-17-05-20-07-876d61ea.jpg" alt="تأجير جلسات شعبية">
+            </div>
+            <div class="service">
+                <h3>تأجير كراسي شفافه وعادي</h3>
+                <img src="https://i.postimg.cc/YCGvB2N2/1446-10-17-05-12-57-bf9f83e9.jpg" alt="تأجير كراسي شفافه وعادي">
+            </div>
+            <div class="service">
+                <h3>ضيافة</h3>
+                <img src="https://i.postimg.cc/k5WDDjhk/1446-10-17-05-12-51-ef18847b.jpg" alt="ضيافة">
+            </div>
+            <div class="service">
+                <h3>قهوجيين وصبابين</h3>
+                <img src="https://i.postimg.cc/B6sbFxrt/1446-10-17-05-12-55-27f87b4d.jpg" alt="قهوجيين وصبابين">
+            </div>
+        </div>
+    </section>
 
-    <div class="contact-buttons">
-        <a href="https://wa.me/yourwhatsapplink" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" style="width: 40px; height: 40px;">
-        </a>
-        <a href="tel:+123456789" class="phone">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Phone_icon.svg" alt="Call" style="width: 40px; height: 40px;">
-        </a>
-    </div>
-</header>
+    <section class="contact-buttons">
+        <a href="tel:+1234567890" class="phone">📞</a>
+        <a href="https://wa.me/1234567890" class="whatsapp">💬</a>
+    </section>
 
-<div class="services">
-    <h2>خدماتنا</h2>
-    <ul>
-        <li>تأجير مستلزمات الحفلات</li>
-        <li>تنظيم المناسبات</li>
-        <li>خدمات المؤتمرات</li>
-    </ul>
-</div>
-
-<div class="works">
-    <h2>أعمالنا</h2>
-    <div>
-        <img src="https://i.postimg.cc/fy1CZkK4/1446-10-17-05-12-56-c0e3dfba.jpg" alt="Work 1">
-        <img src="https://i.postimg.cc/MKF2MYsx/1446-10-17-05-13-00-16a06efe.jpg" alt="Work 2">
-        <img src="https://i.postimg.cc/MpgS4YRt/1446-10-17-05-13-01-f7ce92ed.jpg" alt="Work 3">
-        <img src="https://i.postimg.cc/1R03qb6S/1446-10-17-05-13-02-fc0ea9db.jpg" alt="Work 4">
-        <img src="https://i.postimg.cc/nhFjrpwN/1446-10-17-05-13-02-5fac814b.jpg" alt="Work 5">
-    </div>
-</div>
-
-<footer>
-    <p>جميع الحقوق محفوظة &copy; 2025</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 الابيض لتأجير جميع مستلزمات الحفلات والمناسبات</p>
+    </footer>
 </body>
 </html>
