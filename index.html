@@ -8,7 +8,7 @@
   <meta name="google-site-verification" content="aTDLJpvUt6DkYyO31-FZJJEr4B4xO1fmIgf9QBah8EU" />
   <title>تأجير جميع مستلزمات الحفلات والمناسبات في الشرقية | كراسي - طاولات - خيام - ضيافة</title>
 
-  <!-- Google tag (gtag.js) - جديد -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17126283722"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -126,9 +126,21 @@
     </div>
   </section>
 
-  <!-- Event snippet for Website lead conversion page -->
+  <!-- ربط الإحالات الناجحة عند الضغط -->
   <script>
-    gtag('event', 'conversion', {'send_to': 'AW-17126283722/Ug5LCO2v1s8aEMqzueY_'});
+    // زر الاتصال
+    document.querySelector('a[href^="tel:"]').addEventListener('click', function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17126283722/Ug5LCO2v1s8aEMqzueY_'
+      });
+    });
+
+    // زر واتساب
+    document.querySelector('a[href^="https://wa.me"]').addEventListener('click', function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17126283722/Ug5LCO2v1s8aEMqzueY_'
+      });
+    });
   </script>
 </body>
 </html>
